@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroMachine from "@/assets/hero-machine-3d.png";
+import heroRobot from "@/assets/robot-6axis-hero.png";
 
 const Hero = () => {
   return (
@@ -29,8 +29,8 @@ const Hero = () => {
           {/* Right Image */}
           <div className="relative animate-fade-in lg:block hidden">
             <img
-              src={heroMachine}
-              alt="Industrial Machine with IoT"
+              src={heroRobot}
+              alt="6-Axis Industrial Robot with IoT"
               className="w-full h-auto max-w-2xl mx-auto drop-shadow-2xl"
             />
           </div>
