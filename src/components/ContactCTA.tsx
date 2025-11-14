@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactCTA = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-section">
+    <section id="contact" className="py-20 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Info */}
@@ -105,7 +105,7 @@ const ContactCTA = () => {
               <Button 
                 type="submit" 
                 size="lg" 
-                className="w-full bg-accent hover:bg-accent/90"
+                className="w-full bg-primary hover:bg-primary/90 rounded-full"
               >
                 Send Message
               </Button>
