@@ -2,33 +2,33 @@ import { Facebook, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-bold mb-4">LCA Industrial Solutions</h3>
-            <p className="text-primary-foreground/80 text-sm">
+            <p className="text-background/70 text-sm">
               Leading provider of industrial automation solutions for modern manufacturing.
             </p>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Products</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="#" className="hover:text-accent transition-colors">Special Purpose Machines</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">6-Axis Robots</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">IIoT Solutions</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">PMS & EMS</a></li>
+            <ul className="space-y-2 text-sm text-background/70">
+              <li><a href="#" className="hover:text-primary transition-colors">Special Purpose Machines</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">6-Axis Robots</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">IIoT Solutions</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">PMS & EMS</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="#" className="hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Contact</a></li>
+            <ul className="space-y-2 text-sm text-background/70">
+              <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Case Studies</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -37,19 +37,19 @@ const Footer = () => {
             <div className="flex gap-4">
               <a 
                 href="#" 
-                className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-accent transition-colors"
+                className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
+        <div className="border-t border-background/20 pt-8 text-center text-sm text-background/50">
           <p>&copy; {new Date().getFullYear()} LCA Industrial Solutions. All rights reserved.</p>
         </div>
       </div>
