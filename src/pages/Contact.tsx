@@ -119,24 +119,6 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Business Hours */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-foreground mb-8">Business Hours</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="font-semibold text-foreground mb-2">Monday - Saturday</h3>
-                  <p className="text-muted-foreground">9:00 AM - 6:00 PM IST</p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6">
-                  <h3 className="font-semibold text-foreground mb-2">Sunday</h3>
-                  <p className="text-muted-foreground">Closed</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
