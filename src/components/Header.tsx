@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Logo from "./Logo";
+import ContactDialog from "./ContactDialog";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,11 +52,7 @@ const Header = () => {
             >
               FAQ
             </a>
-            <Button
-              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8"
-            >
-              Book a call
-            </Button>
+            <ContactDialog className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8" />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -118,9 +114,7 @@ const Header = () => {
             >
               FAQ
             </a>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
-              Book a call
-            </Button>
+            <ContactDialog className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full" />
           </nav>
         )}
       </div>
