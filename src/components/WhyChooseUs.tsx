@@ -9,8 +9,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: Zap,
-      title: "Custom Solutions",
-      description: "Tailored automation systems designed specifically for your production needs"
+      title: "Smart IIoT Integration",
+      description: "Advanced IIoT systems for real-time monitoring, predictive maintenance, and data-driven insights"
     },
     {
       icon: Users,

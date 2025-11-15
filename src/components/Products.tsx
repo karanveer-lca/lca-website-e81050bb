@@ -21,10 +21,10 @@ const Products = () => {
     },
     {
       icon: Network,
-      title: "IIoT Solutions - PMS & EMS",
-      description: "Our flagship products: Production Monitoring System and Energy Management System for complete operational visibility.",
+      title: "IIoT Solutions - Our Flagship Product",
+      description: "Transform operations with our Production Monitoring System (PMS) and Energy Management System (EMS). Real-time insights, predictive analytics, and measurable ROI.",
       image: iiotImage,
-      features: ["Real-time Monitoring", "Data Analytics", "Cloud Integration"]
+      features: ["Real-time Monitoring & OEE", "Energy Analytics & Optimization", "Predictive Maintenance with AI"]
     }
   ];
 

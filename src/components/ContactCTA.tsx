@@ -11,10 +11,10 @@ const ContactCTA = () => {
           {/* Contact Info */}
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Ready to Transform Your Production?
+              Ready to Transform Your Production with Smart IIoT?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Get in touch with our team to discuss how we can optimize your manufacturing processes with custom automation solutions.
+              Get in touch with our team to discuss how we can optimize your manufacturing processes with custom automation solutions and intelligent IIoT systems.
             </p>
 
             <div className="space-y-6">
@@ -24,7 +24,9 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
-                  <p className="text-muted-foreground">info@lcaindustrial.com</p>
+                  <a href="mailto:info@lcaforyou.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    info@lcaforyou.com
+                  </a>
                 </div>
               </div>
 
@@ -34,7 +36,9 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Call Us</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <a href="tel:+919988111105" className="text-muted-foreground hover:text-primary transition-colors">
+                    +91 9988 111 105
+                  </a>
                 </div>
               </div>
 

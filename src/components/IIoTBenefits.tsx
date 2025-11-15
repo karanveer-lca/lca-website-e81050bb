@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingDown, TrendingUp, Activity, Shield, Zap, BarChart3 } from "lucide-react";
+import ContactDialog from "./ContactDialog";
 
 const IIoTBenefits = () => {
   const benefits = [
@@ -93,18 +94,19 @@ const IIoTBenefits = () => {
         {/* Call to Action */}
         <div className="text-center bg-primary/5 rounded-2xl p-8 border border-primary/20">
           <h3 className="text-2xl font-bold text-foreground mb-3">
-            Ready to Transform Your Operations?
+            Transform Your Factory with Smart IIoT Solutions
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Join industry leaders who've already revolutionized their manufacturing processes with our IIoT solutions
+            Our Production Monitoring System (PMS) and Energy Management System (EMS) provide real-time insights that drive measurable results. Join industry leaders who've revolutionized their manufacturing processes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-medium transition-colors shadow-elevated">
-              Schedule a Demo
-            </button>
-            <button className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-full font-medium transition-colors">
-              Download ROI Calculator
-            </button>
+            <ContactDialog 
+              trigger={
+                <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-medium transition-colors shadow-elevated">
+                  Schedule a Demo
+                </button>
+              }
+            />
           </div>
         </div>
       </div>

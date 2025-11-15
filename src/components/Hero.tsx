@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import heroRobot from "@/assets/robot-6axis-hero.png";
 
+import ContactDialog from "./ContactDialog";
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
@@ -15,15 +17,16 @@ const Hero = () => {
               Advantages
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              We design and deliver cutting-edge robots enhanced with built-in IIoT connectivity. 
-              Get real-time data, important insights, and seamless integration for smarter, more productive automation.
+              Custom automation solutions with SPMs, 6-Axis Robots, and intelligent
+              IIoT systems (PMS & EMS) that deliver real-time insights for manufacturing excellence.
             </p>
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-10 py-6 text-lg shadow-elevated"
-            >
-              Contact
-            </Button>
+            <ContactDialog 
+              trigger={
+                <button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-10 py-6 text-lg shadow-elevated">
+                  Get in Touch
+                </button>
+              }
+            />
           </div>
 
           {/* Right Image */}
