@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Play } from "lucide-react";
 
 interface VideoDialogProps {
@@ -21,7 +15,7 @@ const VideoDialog = ({ trigger, videoUrl }: VideoDialogProps) => {
   const getYouTubeEmbedUrl = (url: string) => {
     try {
       const urlObj = new URL(url);
-      let videoId = "";
+      let videoId = "oKt9c_7X0n8";
 
       if (urlObj.hostname.includes("youtube.com")) {
         if (urlObj.pathname.includes("/shorts/")) {
@@ -67,13 +61,11 @@ const VideoDialog = ({ trigger, videoUrl }: VideoDialogProps) => {
         <DialogHeader>
           <DialogTitle>Company Introduction</DialogTitle>
           <DialogDescription>
-            {videoAvailable && embedUrl
-              ? "Watch our introduction video"
-              : "Video not available right now"}
+            {videoAvailable && embedUrl ? "Watch our introduction video" : "Video not available right now"}
           </DialogDescription>
         </DialogHeader>
         {videoAvailable && embedUrl ? (
-          <div className="w-full" style={{ aspectRatio: '9/16' }}>
+          <div className="w-full" style={{ aspectRatio: "9/16" }}>
             <iframe
               src={embedUrl}
               className="w-full h-full rounded-lg"
@@ -82,7 +74,7 @@ const VideoDialog = ({ trigger, videoUrl }: VideoDialogProps) => {
             />
           </div>
         ) : (
-          <div className="w-full bg-muted rounded-lg flex items-center justify-center" style={{ aspectRatio: '9/16' }}>
+          <div className="w-full bg-muted rounded-lg flex items-center justify-center" style={{ aspectRatio: "9/16" }}>
             <p className="text-muted-foreground">Video not available right now</p>
           </div>
         )}
