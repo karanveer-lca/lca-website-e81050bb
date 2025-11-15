@@ -6,11 +6,11 @@ import iiotImage from "@/assets/iiot-dashboard.jpg";
 const Products = () => {
   const products = [
     {
-      icon: Cpu,
-      title: "Special Purpose Machines",
-      description: "Custom-engineered SPMs designed to meet your unique production requirements with precision and reliability.",
-      image: spmImage,
-      features: ["Custom Design", "High Precision", "Scalable Solutions"]
+      icon: Network,
+      title: "IIoT Solutions - Our Flagship Product",
+      description: "Transform operations with our Production Monitoring System (PMS) and Energy Management System (EMS). Real-time insights, predictive analytics, and measurable ROI.",
+      image: iiotImage,
+      features: ["Real-time Monitoring & OEE", "Energy Analytics & Optimization", "Predictive Maintenance with AI"]
     },
     {
       icon: Bot,
@@ -20,11 +20,11 @@ const Products = () => {
       features: ["Custom Programming", "Fast Integration", "24/7 Support"]
     },
     {
-      icon: Network,
-      title: "IIoT Solutions - Our Flagship Product",
-      description: "Transform operations with our Production Monitoring System (PMS) and Energy Management System (EMS). Real-time insights, predictive analytics, and measurable ROI.",
-      image: iiotImage,
-      features: ["Real-time Monitoring & OEE", "Energy Analytics & Optimization", "Predictive Maintenance with AI"]
+      icon: Cpu,
+      title: "Special Purpose Machines",
+      description: "Custom-engineered SPMs designed to meet your unique production requirements with precision and reliability.",
+      image: spmImage,
+      features: ["Custom Design", "High Precision", "Scalable Solutions"]
     }
   ];
 

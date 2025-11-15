@@ -1,4 +1,4 @@
-import heroRobot from "@/assets/robot-6axis-hero.png";
+import heroRobot from "@/assets/hero-robot-main.png";
 import ContactDialog from "./ContactDialog";
 import { TrendingUp, Wifi, AlertTriangle } from "lucide-react";
 

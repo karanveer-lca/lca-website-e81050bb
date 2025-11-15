@@ -15,18 +15,18 @@ const IIoTSystems = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* PMS Card - Left Side (Pinkish tone) */}
-          <Card className="border-none shadow-elevated overflow-hidden bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-950/20 dark:to-pink-900/20">
+          {/* PMS Card - Left Side (Bluish tone) */}
+          <Card className="border-none shadow-elevated overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20">
             <CardContent className="p-8">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-14 h-14 bg-pink-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <TrendingUp className="h-7 w-7 text-pink-600 dark:text-pink-400" />
+                <div className="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="h-7 w-7 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
                     Production Monitoring System
                   </h3>
-                  <p className="text-sm text-pink-700 dark:text-pink-300 font-semibold">PMS</p>
+                  <p className="text-sm text-blue-700 dark:text-blue-300 font-semibold">PMS</p>
                 </div>
               </div>
               
@@ -36,25 +36,25 @@ const IIoTSystems = () => {
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   <span className="text-sm">Real-time OEE & Production Tracking</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   <span className="text-sm">Machine Performance Analytics</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   <span className="text-sm">Downtime Analysis & Alerts</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <div className="w-2 h-2 bg-pink-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   <span className="text-sm">Production Planning Optimization</span>
                 </div>
               </div>
 
-              <div className="mt-8 p-4 bg-pink-100 dark:bg-pink-900/30 rounded-lg">
-                <p className="text-2xl font-bold text-pink-600 dark:text-pink-400">↑ 45%</p>
+              <div className="mt-8 p-4 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">↑ 45%</p>
                 <p className="text-sm text-gray-700 dark:text-gray-300">Average Productivity Increase</p>
               </div>
             </CardContent>

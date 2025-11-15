@@ -33,7 +33,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h4 className="font-semibold mb-4">Visit Us</h4>
+            <p className="text-background/70 text-sm mb-4">
+              St.No.3, 1279, opposite Dhandari Flyover,<br />
+              Dhandari Kalan, Ludhiana,<br />
+              Punjab 141016
+            </p>
+            <h4 className="font-semibold mb-3 mt-6">Connect</h4>
             <div className="flex gap-4">
               <a 
                 href="#" 
