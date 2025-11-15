@@ -17,16 +17,10 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             <a
-              href="#process"
+              href="#products"
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
-              Process
-            </a>
-            <a
-              href="#services"
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Services
+              Solutions
             </a>
             <a
               href="#benefits"
@@ -39,18 +33,6 @@ const Header = () => {
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               About
-            </a>
-            <a
-              href="#plans"
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Plans
-            </a>
-            <a
-              href="#faq"
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              FAQ
             </a>
             <ContactDialog className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8" />
           </nav>
@@ -73,18 +55,11 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="lg:hidden py-6 space-y-4 border-t border-border">
             <a
-              href="#process"
+              href="#products"
               className="block text-foreground hover:text-primary transition-colors font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Process
-            </a>
-            <a
-              href="#services"
-              className="block text-foreground hover:text-primary transition-colors font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
+              Solutions
             </a>
             <a
               href="#benefits"
@@ -99,20 +74,6 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
-            <a
-              href="#plans"
-              className="block text-foreground hover:text-primary transition-colors font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Plans
-            </a>
-            <a
-              href="#faq"
-              className="block text-foreground hover:text-primary transition-colors font-medium"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              FAQ
             </a>
             <ContactDialog className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full" />
           </nav>

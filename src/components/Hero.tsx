@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
 import heroRobot from "@/assets/robot-6axis-hero.png";
-
 import ContactDialog from "./ContactDialog";
+import { TrendingUp, Wifi, AlertTriangle } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -29,13 +28,65 @@ const Hero = () => {
             />
           </div>
 
-          {/* Right Image */}
+          {/* Right Image with Floating Alerts */}
           <div className="relative animate-fade-in lg:block hidden">
             <img
               src={heroRobot}
-              alt="6-Axis Industrial Robot with IoT"
-              className="w-full h-auto max-w-2xl mx-auto drop-shadow-2xl"
+              alt="6-Axis Industrial Robot with IoT monitoring alerts"
+              className="w-full h-auto max-w-2xl mx-auto drop-shadow-2xl relative z-10"
             />
+            
+            {/* Floating Alert Cards */}
+            {/* Machine Downtime Alert - Top Left */}
+            <div className="absolute top-8 left-0 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-4 w-52 animate-float border border-border">
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
+                  <AlertTriangle className="w-4 h-4 text-destructive" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs text-muted-foreground mb-1">Alert</p>
+                  <p className="text-sm font-semibold text-foreground mb-1">Machine Downtime</p>
+                  <p className="text-2xl font-bold text-foreground">53.43</p>
+                  <p className="text-xs text-muted-foreground">Minutes</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Online Status - Middle Right */}
+            <div className="absolute top-1/3 right-4 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-3 animate-float-delayed border border-border">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center">
+                  <Wifi className="w-3 h-3 text-green-500" />
+                </div>
+                <span className="text-xs font-medium text-foreground">Online</span>
+              </div>
+              <p className="text-sm font-semibold text-foreground mb-1">Machine Performance</p>
+              <div className="w-32 h-12 bg-gradient-to-r from-primary/10 to-primary/5 rounded flex items-end justify-around px-2 pb-1">
+                <div className="w-1 bg-primary/40 h-6"></div>
+                <div className="w-1 bg-primary/60 h-8"></div>
+                <div className="w-1 bg-primary/50 h-5"></div>
+                <div className="w-1 bg-primary/70 h-9"></div>
+                <div className="w-1 bg-primary h-10"></div>
+                <div className="w-1 bg-primary/80 h-7"></div>
+              </div>
+            </div>
+
+            {/* Live OEE - Bottom Left */}
+            <div className="absolute bottom-12 left-8 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-4 w-44 animate-float-slow border border-border">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 rounded-full bg-destructive animate-pulse"></div>
+                <div className="flex-1">
+                  <p className="text-xs font-medium text-foreground mb-1">Live OEE</p>
+                  <p className="text-3xl font-bold text-foreground">21.2%</p>
+                  <div className="mt-2 relative w-16 h-16">
+                    <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                      <circle cx="18" cy="18" r="16" fill="none" className="stroke-muted" strokeWidth="2"></circle>
+                      <circle cx="18" cy="18" r="16" fill="none" className="stroke-primary" strokeWidth="2" strokeDasharray="21.2, 100"></circle>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
