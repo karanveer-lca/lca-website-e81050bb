@@ -31,7 +31,7 @@ const ClientLogos = () => {
           Trusted by Industry Leaders
         </h2>
         <div className="relative overflow-hidden">
-          <div className="flex animate-scroll gap-12 items-center">
+          <div className="flex animate-scroll gap-16 items-center">
             {/* First set of logos */}
             {logos.map((logo, index) => (
               <div
@@ -49,6 +49,19 @@ const ClientLogos = () => {
             {logos.map((logo, index) => (
               <div
                 key={`logo-2-${index}`}
+                className="flex-shrink-0 w-32 h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  src={logo}
+                  alt={`Client logo ${index + 1}`}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            ))}
+            {/* Third set for extra smoothness */}
+            {logos.map((logo, index) => (
+              <div
+                key={`logo-3-${index}`}
                 className="flex-shrink-0 w-32 h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
               >
                 <img
