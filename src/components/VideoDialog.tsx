@@ -63,7 +63,7 @@ const VideoDialog = ({ trigger, videoUrl }: VideoDialogProps) => {
           Watch Intro
         </button>
       )}
-      <DialogContent className="max-w-3xl">
+      <DialogContent className="max-w-md">
         <DialogHeader>
           <DialogTitle>Company Introduction</DialogTitle>
           <DialogDescription>
@@ -73,7 +73,7 @@ const VideoDialog = ({ trigger, videoUrl }: VideoDialogProps) => {
           </DialogDescription>
         </DialogHeader>
         {videoAvailable && embedUrl ? (
-          <div className="aspect-video w-full">
+          <div className="w-full" style={{ aspectRatio: '9/16' }}>
             <iframe
               src={embedUrl}
               className="w-full h-full rounded-lg"
@@ -82,7 +82,7 @@ const VideoDialog = ({ trigger, videoUrl }: VideoDialogProps) => {
             />
           </div>
         ) : (
-          <div className="aspect-video w-full bg-muted rounded-lg flex items-center justify-center">
+          <div className="w-full bg-muted rounded-lg flex items-center justify-center" style={{ aspectRatio: '9/16' }}>
             <p className="text-muted-foreground">Video not available right now</p>
           </div>
         )}
