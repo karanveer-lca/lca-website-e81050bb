@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactCTA = () => {
@@ -58,63 +55,33 @@ const ContactCTA = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-card rounded-lg shadow-card p-8">
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                  Full Name
-                </label>
-                <Input
-                  id="name"
-                  placeholder="John Doe"
-                  className="bg-background"
-                />
+          {/* Business Hours */}
+          <div className="bg-background border border-border rounded-lg shadow-card p-8">
+            <h3 className="text-2xl font-bold text-foreground mb-6">Business Hours</h3>
+            <div className="space-y-4">
+              <div className="flex justify-between items-center pb-4 border-b border-border">
+                <span className="text-foreground font-medium">Monday - Friday</span>
+                <span className="text-muted-foreground">9:00 AM - 6:00 PM</span>
               </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                  Email Address
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="john@company.com"
-                  className="bg-background"
-                />
+              <div className="flex justify-between items-center pb-4 border-b border-border">
+                <span className="text-foreground font-medium">Saturday</span>
+                <span className="text-muted-foreground">9:00 AM - 2:00 PM</span>
               </div>
-
-              <div>
-                <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                  Company Name
-                </label>
-                <Input
-                  id="company"
-                  placeholder="Your Company"
-                  className="bg-background"
-                />
+              <div className="flex justify-between items-center">
+                <span className="text-foreground font-medium">Sunday</span>
+                <span className="text-muted-foreground">Closed</span>
               </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Message
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Tell us about your automation needs..."
-                  rows={4}
-                  className="bg-background"
-                />
-              </div>
-
-              <Button 
-                type="submit" 
-                size="lg" 
-                className="w-full bg-primary hover:bg-primary/90 rounded-full"
-              >
-                Send Message
-              </Button>
-            </form>
+            </div>
+            
+            <div className="mt-8 pt-8 border-t border-border">
+              <h4 className="text-lg font-semibold text-foreground mb-4">Quick Response</h4>
+              <p className="text-muted-foreground mb-4">
+                We typically respond to inquiries within 24 hours during business days.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                For urgent matters, please call us directly.
+              </p>
+            </div>
           </div>
         </div>
       </div>

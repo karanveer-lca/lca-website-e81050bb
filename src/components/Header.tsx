@@ -17,13 +17,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             <a
-              href="#products"
+              href="/#products"
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Solutions
             </a>
             <a
-              href="#benefits"
+              href="/#benefits"
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Benefits
@@ -61,14 +61,14 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="lg:hidden py-6 space-y-4 border-t border-border">
             <a
-              href="#products"
+              href="/#products"
               className="block text-foreground hover:text-primary transition-colors font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Solutions
             </a>
             <a
-              href="#benefits"
+              href="/#benefits"
               className="block text-foreground hover:text-primary transition-colors font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
