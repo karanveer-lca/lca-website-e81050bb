@@ -70,9 +70,18 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Map placeholder */}
-                <div className="mt-8 bg-muted rounded-2xl h-64 flex items-center justify-center border border-border">
-                  <MapPin className="w-12 h-12 text-muted-foreground" />
+                {/* Google Map */}
+                <div className="mt-8 rounded-2xl overflow-hidden border border-border shadow-soft">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.6979497249217!2d75.9211352!3d30.8671306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a9d0a50c51439%3A0x9135ca149a44c3e9!2sLCA%20INDUSTRIAL%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1763223318510!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="300" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={true}
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="LCA Industrial Solutions Location"
+                  />
                 </div>
               </div>
 
