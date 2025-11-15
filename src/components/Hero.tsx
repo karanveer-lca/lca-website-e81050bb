@@ -1,5 +1,6 @@
 import heroRobot from "@/assets/hero-robot-main.png";
 import ContactDialog from "./ContactDialog";
+import VideoDialog from "./VideoDialog";
 import { TrendingUp, Wifi, AlertTriangle } from "lucide-react";
 
 const Hero = () => {
@@ -19,13 +20,16 @@ const Hero = () => {
               Custom automation solutions with SPMs, 6-Axis Robots, and intelligent
               IIoT systems (PMS & EMS) that deliver real-time insights for manufacturing excellence.
             </p>
-            <ContactDialog 
-              trigger={
-                <button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-10 py-6 text-lg shadow-elevated">
-                  Get in Touch
-                </button>
-              }
-            />
+            <div className="flex flex-wrap gap-4">
+              <ContactDialog 
+                trigger={
+                  <button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-10 py-6 text-lg shadow-elevated">
+                    Get in Touch
+                  </button>
+                }
+              />
+              <VideoDialog videoUrl="https://www.youtube.com/shorts/oKt9c_7X0n8" />
+            </div>
           </div>
 
           {/* Right Image with Floating Alerts */}
@@ -38,7 +42,7 @@ const Hero = () => {
             
             {/* Floating Alert Cards */}
             {/* Machine Downtime Alert - Top Left */}
-            <div className="absolute top-8 left-0 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-4 w-52 animate-float border border-border">
+            <div className="absolute top-8 left-0 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-4 w-52 animate-float border border-border z-10">
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
                   <AlertTriangle className="w-4 h-4 text-destructive" />
@@ -53,7 +57,7 @@ const Hero = () => {
             </div>
 
             {/* Online Status - Top Right */}
-            <div className="absolute top-12 right-8 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-3 animate-float-delayed border border-border">
+            <div className="absolute top-12 right-8 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-3 animate-float-delayed border border-border z-10">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center">
                   <Wifi className="w-3 h-3 text-green-500" />
@@ -72,7 +76,7 @@ const Hero = () => {
             </div>
 
             {/* Live OEE - Bottom Center */}
-            <div className="absolute bottom-16 left-1/3 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-4 w-44 animate-float-slow border border-border">
+            <div className="absolute bottom-16 left-1/4 bg-background/95 backdrop-blur-sm rounded-xl shadow-elevated p-4 w-44 animate-float-slow border border-border z-0">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-destructive animate-pulse"></div>
                 <div className="flex-1">
