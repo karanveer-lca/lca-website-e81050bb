@@ -49,8 +49,9 @@ const ContactCTA = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Visit Us</h3>
                   <p className="text-muted-foreground">
-                    Industrial Park, Sector 5<br />
-                    Manufacturing District
+                    St.No.3, 1279, opposite Dhandari Flyover,<br />
+                    Dhandari Kalan, Ludhiana,<br />
+                    Punjab 141016
                   </p>
                 </div>
               </div>
