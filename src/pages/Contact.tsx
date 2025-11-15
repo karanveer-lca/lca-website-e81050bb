@@ -76,55 +76,35 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Business Hours & Additional Info */}
-              <div className="space-y-8">
-                <div className="bg-card border border-border rounded-2xl p-8 shadow-soft">
-                  <h2 className="text-2xl font-bold text-foreground mb-6">Business Hours</h2>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center pb-4 border-b border-border">
-                      <span className="text-foreground font-medium">Monday - Friday</span>
-                      <span className="text-muted-foreground">9:00 AM - 6:00 PM</span>
+              {/* Why Choose LCA */}
+              <div className="bg-gradient-hero border border-border rounded-2xl p-8 shadow-soft">
+                <h2 className="text-2xl font-bold text-foreground mb-6">Why Choose LCA?</h2>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
                     </div>
-                    <div className="flex justify-between items-center pb-4 border-b border-border">
-                      <span className="text-foreground font-medium">Saturday</span>
-                      <span className="text-muted-foreground">9:00 AM - 2:00 PM</span>
+                    <span className="text-muted-foreground">Custom automation solutions tailored to your needs</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-foreground font-medium">Sunday</span>
-                      <span className="text-muted-foreground">Closed</span>
+                    <span className="text-muted-foreground">Expert IIoT integration and monitoring</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
                     </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-hero border border-border rounded-2xl p-8 shadow-soft">
-                  <h3 className="text-xl font-bold text-foreground mb-4">Why Choose LCA?</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-primary-foreground text-sm font-bold">✓</span>
-                      </div>
-                      <span className="text-muted-foreground">Custom automation solutions tailored to your needs</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-primary-foreground text-sm font-bold">✓</span>
-                      </div>
-                      <span className="text-muted-foreground">Expert IIoT integration and monitoring</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-primary-foreground text-sm font-bold">✓</span>
-                      </div>
-                      <span className="text-muted-foreground">Proven track record with leading manufacturers</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-primary-foreground text-sm font-bold">✓</span>
-                      </div>
-                      <span className="text-muted-foreground">Ongoing support and maintenance</span>
-                    </li>
-                  </ul>
-                </div>
+                    <span className="text-muted-foreground">Proven track record with leading manufacturers</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-primary-foreground text-sm font-bold">✓</span>
+                    </div>
+                    <span className="text-muted-foreground">Ongoing support and maintenance</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
