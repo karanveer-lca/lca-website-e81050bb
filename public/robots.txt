@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://lcaindustrialsolutions.com/sitemap.xml
+Crawl-delay: 1
