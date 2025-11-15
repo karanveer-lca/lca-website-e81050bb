@@ -29,10 +29,16 @@ const Header = () => {
               Benefits
             </a>
             <a
-              href="#about"
+              href="/about"
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               About
+            </a>
+            <a
+              href="/contact"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Contact
             </a>
             <ContactDialog className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8" />
           </nav>
@@ -69,11 +75,18 @@ const Header = () => {
               Benefits
             </a>
             <a
-              href="#about"
+              href="/about"
               className="block text-foreground hover:text-primary transition-colors font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               About
+            </a>
+            <a
+              href="/contact"
+              className="block text-foreground hover:text-primary transition-colors font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
             </a>
             <ContactDialog className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full" />
           </nav>

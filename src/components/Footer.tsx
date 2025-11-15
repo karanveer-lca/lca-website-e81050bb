@@ -15,10 +15,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Products</h4>
             <ul className="space-y-2 text-sm text-background/70">
-              <li><a href="#" className="hover:text-primary transition-colors">Special Purpose Machines</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">6-Axis Robots</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">IIoT Solutions</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">PMS & EMS</a></li>
+              <li><a href="/#products" className="hover:text-primary transition-colors">Special Purpose Machines</a></li>
+              <li><a href="/#products" className="hover:text-primary transition-colors">6-Axis Robots</a></li>
+              <li><a href="/#products" className="hover:text-primary transition-colors">IIoT Solutions</a></li>
+              <li><a href="/#products" className="hover:text-primary transition-colors">PMS & EMS</a></li>
             </ul>
           </div>
 
@@ -26,8 +26,6 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li><a href="/about" className="hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
               <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -42,7 +40,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-3 mt-6">Connect</h4>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/lca-industrial-solutions/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
