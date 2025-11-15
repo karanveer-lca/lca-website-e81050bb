@@ -1,9 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -79,81 +76,55 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Contact Form */}
-              <div className="bg-card border border-border rounded-2xl p-8 shadow-soft">
-                <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
-                
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      Full Name *
-                    </label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your name" 
-                      required
-                      className="w-full"
-                    />
+              {/* Business Hours & Additional Info */}
+              <div className="space-y-8">
+                <div className="bg-card border border-border rounded-2xl p-8 shadow-soft">
+                  <h2 className="text-2xl font-bold text-foreground mb-6">Business Hours</h2>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center pb-4 border-b border-border">
+                      <span className="text-foreground font-medium">Monday - Friday</span>
+                      <span className="text-muted-foreground">9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div className="flex justify-between items-center pb-4 border-b border-border">
+                      <span className="text-foreground font-medium">Saturday</span>
+                      <span className="text-muted-foreground">9:00 AM - 2:00 PM</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-foreground font-medium">Sunday</span>
+                      <span className="text-muted-foreground">Closed</span>
+                    </div>
                   </div>
+                </div>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email Address *
-                    </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="your.email@company.com" 
-                      required
-                      className="w-full"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                      Phone Number
-                    </label>
-                    <Input 
-                      id="phone" 
-                      type="tel" 
-                      placeholder="+91 XXXXX XXXXX" 
-                      className="w-full"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                      Company Name
-                    </label>
-                    <Input 
-                      id="company" 
-                      placeholder="Your company" 
-                      className="w-full"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message *
-                    </label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Tell us about your project requirements..."
-                      rows={6}
-                      required
-                      className="w-full resize-none"
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                    size="lg"
-                  >
-                    <Send className="w-4 h-4 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
+                <div className="bg-gradient-hero border border-border rounded-2xl p-8 shadow-soft">
+                  <h3 className="text-xl font-bold text-foreground mb-4">Why Choose LCA?</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-primary-foreground text-sm font-bold">✓</span>
+                      </div>
+                      <span className="text-muted-foreground">Custom automation solutions tailored to your needs</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-primary-foreground text-sm font-bold">✓</span>
+                      </div>
+                      <span className="text-muted-foreground">Expert IIoT integration and monitoring</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-primary-foreground text-sm font-bold">✓</span>
+                      </div>
+                      <span className="text-muted-foreground">Proven track record with leading manufacturers</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-primary-foreground text-sm font-bold">✓</span>
+                      </div>
+                      <span className="text-muted-foreground">Ongoing support and maintenance</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
